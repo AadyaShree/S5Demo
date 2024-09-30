@@ -1,28 +1,15 @@
 *{
     margin: 0;padding: 0;
 }
-.heading{
-    color :rgb(216, 97, 43);
-    height: 50px;
+.flex-container{
+    display: flex;
+    
+    flex-direction: column;
+    
+}
+.flex-box{
+    height: 30px;width: 30px;background-color: aqua;
+    margin: 10px;
     padding: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-#h1{
-    background-color: #1a7926;
-}
-#h2{
-    background-color:goldenrod;
-}
-div p{
-    font-size: x-large;
-}
-/* child selector 
-div p
-div > p
-div + p
-div - p
 
-priority  --------------
-inline >Id > Class or attribute selector > Element Selector > universal selector
-*/
+}
