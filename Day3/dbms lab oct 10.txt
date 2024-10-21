@@ -1,0 +1,31 @@
+select dname,loc from dept;
+select * from emp where deptno=20;
+select ename,sal from emp where sal>1000;
+select empno,mgr from emp;
+select ename from emp where job='CLERK' and deptno=20;
+select ename from emp where job IN('ANALYST','SALESMAN');
+select * from emp where hiredate <= '30-Sep-81';
+select ename from emp where job NOT IN 'MANAGER';
+
+
+
+
+
+
+select ename from emp where empno IN(7369,7521,7839,7934,7788);
+select * from emp where deptno NOT IN(10,30,40);
+select ename,sal from emp where sal between 1000 and 2000;
+select ename from emp where hiredate < '30-Sep-81' or hiredate > '31-Dec-81';
+
+
+
+
+select distinct job from emp;
+select job from emp;
+
+
+select ename from emp where comm is NULL;
+select ename,job from emp where Mgr is NULL;
+select ename from emp where deptno is NULL;
+select ename from emp where comm is NOT NULL;
+select * from emp where sal>2000 and comm is NULL;
